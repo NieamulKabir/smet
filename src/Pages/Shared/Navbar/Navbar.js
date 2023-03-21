@@ -6,7 +6,7 @@ const Navbar = () => {
     let activeStyle = {
         textDecoration: "underline",
         color: '#7c3aed'
-    
+
     };
     return (
         <>
@@ -31,7 +31,7 @@ const Navbar = () => {
                         <Link to="/">
                             <div className="relative top-[]">
                                 <img className='h-10 w-20' src={logo} alt="logo" />
-                                
+
                             </div>
                         </Link>
                     </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                                 </NavLink>
                             </h1>
                             <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn mr-2">
-                                <NavLink to="/packages"
+                                <NavLink to="/about"
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                     }
@@ -60,12 +60,21 @@ const Navbar = () => {
 
 
                             <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn mr-2">
-                                <NavLink to="/myBooking"
+                                <NavLink to="/products"
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                     }
                                 >
                                     <button className="py-3">PRODUCTS</button>
+                                </NavLink>
+                            </h1>
+                            <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn mr-2">
+                                <NavLink to="/projects"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <button className="py-3">PROJECTS</button>
                                 </NavLink>
                             </h1>
 
@@ -79,7 +88,7 @@ const Navbar = () => {
                                 </NavLink>
                             </h1>
 
-                          
+
 
                             {/* <h1>
                                 {
@@ -137,52 +146,21 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="">
-                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/packages">
-                                    PACKAGES
+                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/about">
+                                    ABOUT
                                 </Link>
                             </li>
                             <li className="">
-                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/myBooking">
-                                    MY-BOOKING
+                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/products">
+                                    PRODUCTS
+                                </Link>
+                            </li>
+                            <li className="">
+                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/projects">
+                                    PROJECTS
                                 </Link>
                             </li>
 
-                            <li className="mt-[] pt-0">
-                                <h1 className="btn btn-ghost  text-gray-800 mr-0 mt[-10px] pr-0">
-                                    <div className="navbar-center">
-                                        <ul className="menu">
-                                            <li className='mt-[-12px] pb-2' tabIndex={0}>
-                                               
-                                                <ul className="bg-green-100 ml-[-280px] md:ml-[-350px] py-4">
-                                                    <li className='mx-auto mb-2'>
-                                                        <h1 className="btn font-bold hover:bg-rose-100  btn-ghost text-gray-800 rounded-btn">
-                                                            <NavLink to="/addPackage"
-                                                                style={({ isActive }) =>
-                                                                    isActive ? activeStyle : undefined
-                                                                }
-                                                            >
-                                                                <button className=" text-xs md:text-base">ADD-PACKAGE</button>
-                                                            </NavLink>
-                                                        </h1>
-                                                    </li>
-                                                    <li>
-                                                        <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn ">
-                                                            <NavLink to="/manageBookings"
-                                                                style={({ isActive }) =>
-                                                                    isActive ? activeStyle : undefined
-                                                                }
-                                                            >
-                                                                <button className="text-xs md:text-base">MANAGE-ALL-BOOKINGS</button>
-                                                            </NavLink>
-                                                        </h1>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </h1>
-                            </li>
 
 
                             <li>
@@ -234,7 +212,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            
+
         </>
     );
 };
