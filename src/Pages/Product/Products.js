@@ -10,7 +10,7 @@ const Products = () => {
             .then(data => setProducts(data))
     }, [])
     return (
-        <div className="bg-green-50 text-white font-serif">
+        <div className="bg-violet-200 text-white font-serif">
             <h1 className=" pt-10 text-center text-4xl font-bold text-amber-600">List of Product & services</h1>
             <p className='text-gray-700 w-[50%] mx-auto'>We offer complete solution of LPG Auto Gas Station equipment on turnkey basis. Our offer compromises the complete range of equipment, consultancy, feasibility study and necessary guidelines approval of the project</p>
 
