@@ -88,7 +88,24 @@ const Navbar = () => {
                                 </NavLink>
                             </h1>
 
-
+                            <h1 className="btn mr-2 font-bold bg-amber-200 hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn">
+                                <NavLink to="/login"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <button className="py-3">LOGIN</button>
+                                </NavLink>
+                            </h1>
+                            <h1 className="btn font-bold bg-amber-200 hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn">
+                                <NavLink to="/register"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <button className="py-3">REGISTER</button>
+                                </NavLink>
+                            </h1>
 
                             {/* <h1>
                                 {
